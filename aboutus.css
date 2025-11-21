@@ -1,0 +1,259 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #E8F0F1;
+    font-family: "Maven Pro", Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+
+.container {
+    width: 100%;
+    padding-top: 1px;
+    margin-top: -1px;
+    background-color: #F8F3E6;
+    height: 25rem;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 50px;
+    margin: 20px;
+    height: 70px;
+    margin-top: 40px;
+}
+
+.nav {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+    margin-left: 16rem;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #2F3E3C;
+}
+
+.nav a:hover {
+    color: #1ebeb6;
+}
+
+.logo {
+    justify-content: flex-start;
+    display: flex;
+    width: 80px;
+    height: 80px;
+    margin-left: 10rem;
+}
+
+.butoni {
+    width: 160px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #C7E7EC;
+    border: 1px solid #C7E7EC;
+    margin-left: 15rem;
+}
+
+.tekstnavbar h2 {
+    text-align: center;
+    color: #1ebeb6;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    font-size: 40px;
+    margin-top: 6rem;
+}
+
+.fotot img {
+    width: auto;
+    height: 250px;
+    margin: 3rem;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+
+.aboutustxt {
+    padding-bottom: 6rem;
+}
+
+.aboutustxt h2 {
+    margin-top: 18rem;
+    width: 60rem;
+    margin-left: 10rem;
+    color: #2F3E3C;
+    letter-spacing: 1px;
+}
+
+.aboutustxt p {
+    margin-top: 3rem;
+    width: 30rem;
+    margin-left: 10rem;
+    color: #2F3E3C;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+.aboutusparagraphs {
+    display: flex;
+}
+
+.staff-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: #F8F3E6;
+    padding: 6rem;
+}
+
+.staff-img {
+    border: 1px solid #1ebeb6;
+    border-radius: 3rem;
+    background-color: #1ebeb6;
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+}
+
+.staff-img img {
+    width: auto;
+    height: 400px;
+    display: block;
+    transition: transform 0.4s ease;
+}
+
+.staff-img:hover img {
+    transform: scale(1.05);
+}
+
+.staff-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 0;
+    background: rgba(0, 0, 0, 0.6);
+    color: #C7E7EC;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    backdrop-filter: blur(3px);
+}
+
+.staff-description h2 {
+    width: 30rem;
+    color: #1ebeb6;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    font-size: 30px;
+}
+
+.staff-description p {
+    margin-top: 3rem;
+    width: 30rem;
+    color: #2F3E3C;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+
+.footer {
+    background-color: #F8F3E6;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+    color: #2F3E3C;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    background-color: #C7E7EC;
+    border-radius: 30px;
+    padding: 50px;
+}
+
+.circle {
+    width: 40px;
+    height: 40px;
+    background: #1ebeb6;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.social img {
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #1ebeb6;
+    margin: 30px 0;
+}
+
+.footer-bottom {
+    text-align: center;
+    color: #2F3E3C;
+}
+
+.newsletter {
+    margin-right: 20rem;
+}
+
+.newsletter h2 {
+    letter-spacing: 1px;
+    font-size: 30px;
+    color: #2F3E3C;
+    font-weight: 20px;
+}
+
+.newsletter p {
+    font-size: 12px;
+    color: #2F3E3C;
+    font-weight: 10px;
+    margin-bottom: 4px;
+    margin-left: 12px;
+}
+
+.subscribe {
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #1ebeb6;
+    border: 1px solid #1ebeb6;
+}
+
+.subscribe a {
+    color: #F8F3E6;
+    text-decoration: none;
+}
+
+.subscribe a :hover {
+    color: #2F3E3C;
+}
+
+.inputsubscribe {
+    margin-right: 5px;
+    padding: 5px;
+    padding-left: 20px;
+    border-radius: 30px;
+    width: 230px;
+    height: 30px;
+    border: 1px solid #F8F3E6;
+}
+
+.inputarea {
+    gap: 10px;
+}
