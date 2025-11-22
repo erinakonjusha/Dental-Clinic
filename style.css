@@ -316,7 +316,7 @@ body {
     position: relative;
     width: 100%;
     padding: 150px 0;
-    background: linear-gradient(rgba(200, 202, 201, .7), rgba(247, 202, 201, .7)), url(images/wowphoto-removebg-preview.png);
+    background: linear-gradient(rgba(255, 255, 255, 0.55), rgba(230, 230, 230, 0.55)), url(images/wowphoto-removebg-preview.png);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
