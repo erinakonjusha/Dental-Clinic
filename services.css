@@ -70,8 +70,6 @@ body {
     margin-top: 6rem;
 }
 
-
-
 .services-wrapper {
     background-color: #E8F0F1;
     padding: 40px 0;
@@ -83,7 +81,6 @@ body {
 .services-right,
 .services-center,
 .services-left {
-
     margin: 80px;
 }
 
@@ -134,66 +131,6 @@ body {
     margin-top: 20px;
 }
 
-
-
-
-
-
-
-
-
-/*  me i qit vertikalisht
-
-.additional-services {
-    background: #e0f7fa;
-    padding: 60px 0;
-}
-
-.additional-services h2 {
-    text-align: center;
-    color: #1ebeb6;
-    font-size: 20px;
-    font-weight: 800;
-    margin-bottom: 40px;
-}
-
-
-.additional-container {
-    display: flex;
-    flex-direction: column; 
-    align-items: center;    
-    gap: 20px;              
-    width: 90%;
-    margin: auto;
-}
-
-.additional-item {
-    background: #ffffffcc;
-    border-radius: 20px;
-    padding: 30px 15px;
-    width: 100%;           
-    max-width: 400px;     
-    text-align: center;
-    font-weight: 700;
-    color: #004d40;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
-    transition: all 0.4s ease;
-}
-
-.additional-item:hover {
-    transform: translateY(-12px);
-    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
-    border-color: #00acc1;
-}
-
-.additional-item .service-name {
-    font-size: 18px;
-}
-*/
-
-
-
-
 .additional-services {
     background: #F8F3E6;
     padding: 60px 0;
@@ -202,11 +139,11 @@ body {
 .additional-services h2 {
     text-align: center;
     color: #1ebeb6;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 800;
     margin-bottom: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
 
 .additional-container {
     display: grid;
@@ -238,7 +175,6 @@ body {
     font-size: 18px;
 }
 
-
 .price-wrap {
     position: relative;
     width: 70%;
@@ -262,7 +198,6 @@ body {
     background-size: cover;
     opacity: 0.3;
 }
-
 
 .price-title {
     text-align: center;
@@ -292,7 +227,7 @@ body {
     margin-left: 28rem;
 }
 
-.butoni1 :hover{
+.butoni1 :hover {
     color: #1ebeb6;
 }
 
