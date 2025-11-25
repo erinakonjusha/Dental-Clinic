@@ -1,0 +1,232 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.login-container {
+    display: flex;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    margin-top: 5rem;
+    margin-bottom: 6em;
+    min-height: 80vh;
+    position: relative;
+    z-index: 2;
+}
+
+.login-leftside {
+    flex: 2;
+    background-color: #BDDBD1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 50px 0 0 50px;
+}
+
+.login-leftside h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 28px;
+    margin-bottom: 6rem;
+}
+
+.logo-login {
+    width: 80px;
+    height: 80px;
+    margin-right: 18rem;
+}
+
+.back-link {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    text-decoration: none;
+    color: #2F3E3C;
+    margin-bottom: 14px;
+    font-size: 14px;
+    font-family: "Maven Pro", Arial, Helvetica, sans-serif;
+}
+
+.back-icon {
+    width: 20px;
+    height: 20px;
+    display: block;
+}
+
+.login-rightside {
+    flex: 2;
+    background-color: #C7E7EC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 0 50px 50px 0;
+}
+
+.login-rightside form {
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 5rem;
+}
+
+.login-rightside h2 {
+    color: #2F3E3C;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 2px;
+    font-size: 30px;
+    margin-top: 6rem;
+}
+
+.login-rightside button {
+    background-color: #1ebeb6;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    width: 150px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    align-self: center;
+    margin-top: 10px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 10px 5px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    font-size: 16px;
+    background: transparent;
+    transition: border-color 0.3s;
+}
+
+.login-container input:focus {
+    border-bottom-color: #1ebeb6;
+}
+
+.go-to-signup {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 14px;
+    font-family: "Maven Pro", Arial, Helvetica, sans-serif;
+}
+
+.go-to-signup a {
+    text-decoration: none;
+    color: #1ebeb6;
+    font-weight: bold;
+}
+
+.background {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-color: #1ebeb6;
+}
+
+.bg-shape {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+/* 1024px (laptop/madhësi mesatare) */
+@media (max-width: 1024px) {
+    .login-container {
+        margin: 3rem 8rem;
+        flex-direction: row;
+        padding: 2rem 0;
+    }
+
+    .login-leftside,
+    .login-rightside {
+        padding: 2rem;
+        gap: 2rem;
+        justify-content: center;  /* per qendrim stabil */
+    }
+
+    .logo-login {
+        margin-right: 0;
+    }
+}
+
+/* 768px (tablet) */
+@media (max-width: 768px) {
+
+    .login-container {
+        flex-direction: column;  
+        margin: 2rem;
+        padding: 0;
+    }
+
+    .login-leftside,
+    .login-rightside {
+        border-radius: 20px;
+        padding: 2rem;
+        gap: 1.7rem;
+        justify-content: center; 
+    }
+
+    .login-rightside h2 {
+        margin-top: 1rem;
+    }
+
+    .login-leftside h2 {
+        margin-bottom: 1rem;
+    }
+
+    .logo-login {
+        margin-right: 0;
+    }
+}
+
+/* 480px (mobile) */
+@media (max-width: 480px) {
+
+    .login-container {
+        margin: 1rem;
+    }
+
+    .login-leftside,
+    .login-rightside {
+        padding: 1.5rem 1rem;
+        gap: 1.2rem;
+        justify-content: center;
+    }
+
+    .login-rightside h2 {
+        font-size: 22px;
+        margin-top: 0.5rem;
+    }
+
+    .login-leftside h2 {
+        font-size: 24px;
+    }
+
+    .login-container input {
+        font-size: 14px;
+    }
+
+    .login-rightside button {
+        width: 130px;
+        padding: 8px;
+    }
+
+    .go-to-signup {
+        font-size: 13px;
+    }
+}
