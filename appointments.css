@@ -153,10 +153,11 @@ body {
 }
 
 .appointment-form input[type="date"] {
-    color: #999; 
+    color: #999;
 }
+
 .appointment-form input[type="date"].valid {
-    color: #333; 
+    color: #333;
 }
 
 .rightside {
@@ -344,15 +345,18 @@ hr {
     margin-top: 5px;
 }
 
-input.invalid, select.invalid {
+input.invalid,
+select.invalid {
     border: 2px solid red !important;
 }
 
-input.valid, select.valid {
+input.valid,
+select.valid {
     border: 2px solid #1ebeb6 !important;
 }
 
-input, select {
+input,
+select {
     transition: border-color 0.3s;
 }
 
@@ -362,7 +366,7 @@ input, select {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.45);
+    background: rgba(0, 0, 0, 0.45);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -383,7 +387,7 @@ input, select {
     border-radius: 30px;
     text-align: center;
     width: 350px;
-    box-shadow: 0px 15px 40px rgba(0,0,0,0.15);
+    box-shadow: 0px 15px 40px rgba(0, 0, 0, 0.15);
     animation: popupOpen 0.4s ease;
     font-family: "Maven Pro", sans-serif;
 }
@@ -421,6 +425,7 @@ input, select {
         transform: scale(0.75);
         opacity: 0;
     }
+
     to {
         transform: scale(1);
         opacity: 1;
@@ -438,7 +443,7 @@ input, select {
     cursor: pointer;
     opacity: 0;
     pointer-events: none;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     transition: all .3s ease;
     display: flex;
     align-items: center;
@@ -453,8 +458,8 @@ input, select {
 .to-top-icon {
     width: 22px;
     height: 22px;
-    filter: invert(100%); 
-    pointer-events: none; 
+    filter: invert(100%);
+    pointer-events: none;
 }
 
 .animate {
@@ -468,6 +473,215 @@ input, select {
     transform: translateY(0);
 }
 
-.scroll-up { transform: translateY(30px); }
-.scroll-fade { transform: scale(0.95); }
+.scroll-up {
+    transform: translateY(30px);
+}
 
+.scroll-fade {
+    transform: scale(0.95);
+}
+
+@media (max-width: 1200px) {
+    .nav {
+        margin-left: 2rem;
+        gap: 20px;
+    }
+
+    .logo {
+        margin-left: 2rem;
+    }
+
+    .butoni {
+        margin-left: auto;
+        margin-right: 20px;
+    }
+
+    .appointment-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .appointment-form {
+        max-width: 90%;
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 40px;
+        order: 2;
+    }
+
+    .rightside {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        order: 1;
+    }
+
+    .box {
+        margin: 20px auto;
+        max-width: 350px;
+        width: 90%;
+        height: auto;
+    }
+
+    .newsletter {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        justify-content: space-between;
+        padding: 0 10px;
+        margin: 10px;
+        height: 60px;
+        border-radius: 40px;
+        margin-top: 30px;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+        margin-left: 20px;
+    }
+
+    .hamburger {
+        display: flex;
+        margin-left: auto;
+        margin-right: 20px;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 10px;
+        right: 10px;
+        background-color: #C7E7EC;
+        border-radius: 30px;
+        padding: 20px 0;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        z-index: 50;
+        transform: translateY(-10px);
+        opacity: 0;
+        pointer-events: none;
+        transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+        margin: 20px;
+        width: 200px;
+        text-align: center;
+        gap: 0;
+        margin-left: 150px;
+    }
+
+    .nav.active {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .nav li {
+        width: 100%;
+        padding: 7px 0;
+        border-bottom: 1px solid rgba(47, 62, 60, 0.1);
+        list-style: none;
+    }
+
+    .nav li:last-child {
+        border-bottom: none;
+    }
+
+    .nav a {
+        padding: 10px 0;
+        display: block;
+        width: 100%;
+        color: #2F3E3C;
+    }
+
+    .butoni {
+        margin: 15px auto;
+        width: 80%;
+        max-width: 200px;
+        background-color: #F8F3E6;
+        width: 170px;
+        height: 50px;
+        text-align: center;
+        border: 1px solid #F8F3E6;
+    }
+
+    .butoni a {
+        color: #1ebeb6;
+        font-weight: bold;
+    }
+
+    .tekstnavbar h2 {
+        font-size: 30px;
+        margin-top: 4rem;
+        margin-left: 10px;
+    }
+
+    .appointment-container {
+        padding: 10px;
+    }
+
+    .appointment-form {
+        max-width: 70%;
+        padding: 0 10px;
+
+    }
+
+    .rreshti1,
+    .rreshti3 {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .box {
+        margin: 20px auto 40px auto;
+    }
+
+    .submit-btn{
+        margin-left: 50px;
+    }
+    .footer {
+        padding: 20px 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 30px;
+    }
+
+    .newsletter {
+        margin-right: 0;
+        order: -1;
+    }
+
+    .inputarea {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .inputsubscribe {
+        width: 90%;
+        max-width: 280px;
+        margin-right: 0;
+    }
+
+    .subscribe {
+        width: 100px;
+        height: 40px;
+        border-radius: 20px;
+        background-color: #1ebeb6;
+        border: 1px solid #1ebeb6;
+        margin-top: 20px;
+    }
+
+    .photo {
+        padding: 80px 0;
+    }
+}
