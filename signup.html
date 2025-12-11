@@ -15,16 +15,31 @@
             <path d="M0,150 C200,300 600,0 800,150 L800,600 L0,600 Z" fill="rgba(255,255,255,0.1)" />
             <path d="M0,200 C300,100 500,400 800,250 L800,600 L0,600 Z" fill="rgba(255,255,255,0.1)" />
         </svg>
-        <div class="signup-container">
+        <div class="signup-container animate scroll-left">
             <div class="signup-leftside">
                 <h2>Sign Up</h2>
                 <hr>
-                <form>
-                    <input type="text" placeholder="Name" required>
-                    <input type="email" placeholder="Email" required>
-                    <input type="password" placeholder="Password" required>
+                <form id="signupForm">
+
+                    <div class="input-group">
+                        <input type="text" id="name" placeholder="Name">
+                        <span id="nameError" class="error"></span>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="text" id="email" placeholder="Email">
+                        <span id="emailError" class="error"></span>
+                    </div>
+
+                    <div class="input-group">
+                        <input type="password" id="password" placeholder="Password">
+                        <span id="passError" class="error"></span>
+                    </div>
+
                     <button type="submit">Sign up</button>
+
                 </form>
+
                 <div class="go-to-login">
                     <p>Already have an account?</p>
                     <a href="login.html">Login</a>
@@ -42,6 +57,7 @@
             </div>
         </div>
     </div>
+    <script src="javascript/signup.js"></script>
 </body>
 
 </html>
