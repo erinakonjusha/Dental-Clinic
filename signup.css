@@ -179,3 +179,101 @@ input.valid {
 
 .scroll-left { transform: translateX(-40px); }
 .scroll-right { transform: translateX(40px); }
+
+@media (max-width: 1200px) {
+    .signup-container {
+        margin-left: 5rem;
+        margin-right: 5rem;
+        width: auto;
+    }
+
+    .logo-signup {
+        margin-left: 0;
+    }
+
+    .signup-rightside h2 {
+        margin-bottom: 4rem;
+    }
+}
+
+@media (max-width: 900px) {
+    .signup-container {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .signup-leftside h2 {
+        font-size: 26px;
+    }
+
+    .signup-rightside h2 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .signup-container {
+        flex-direction: column;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        max-width: 450px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .signup-leftside {
+        order: 2; 
+        border-radius: 0 0 50px 50px;
+        padding: 40px 20px 60px 20px;
+        justify-content: center;
+    }
+
+    .signup-rightside {
+        order: 1; 
+        border-radius: 50px 50px 0 0;
+        padding: 40px 20px;
+        justify-content: center;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .signup-leftside h2 {
+        margin-top: 0;
+        margin-bottom: 30px;
+        font-size: 24px;
+    }
+
+    .signup-leftside form {
+        margin-bottom: 3rem;
+        max-width: 100%;
+    }
+
+    .signup-leftside button {
+        align-self: center;
+    }
+
+    .logo-signup {
+        margin: 0 auto;
+        width: 60px;
+        height: 60px;
+    }
+
+    .signup-rightside h2 {
+        margin-bottom: 0;
+        font-size: 22px;
+        order: 2;
+    }
+
+    .back-home {
+        margin-top: 20px;
+        order: 3;
+    }
+  
+    .go-to-login {
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+}
