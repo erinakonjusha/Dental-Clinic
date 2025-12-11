@@ -93,7 +93,7 @@ body {
 }
 
 .contact-form input {
-    flex: 1 1 45%;
+    width: 100%;
     padding: 15px;
     font-size: 17px;
     border-radius: 10px;
@@ -102,9 +102,24 @@ body {
 }
 
 .contact-form input[placeholder="Message"] {
-    flex: 1 1 100%;
+    width: 100%;
     padding: 20px;
     height: 80px;
+}
+
+.contact-form .error {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.contact-form input.invalid {
+    border: 2px solid red;
+}
+
+.contact-form input.valid {
+    border: 2px solid #1ebeb6;
 }
 
 .submit-btn {
