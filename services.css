@@ -418,3 +418,262 @@ hr {
 .hamburger.open span:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
 }
+
+@media (max-width: 1200px) {
+    .logo {
+        margin-left: 20px;
+    }
+
+    .nav {
+        margin-left: 40px;
+        gap: 20px;
+    }
+
+    .butoni {
+        margin-left: auto;
+        margin-right: 20px;
+    }
+
+    .services-wrapper {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 20px;
+    }
+
+    .services-right,
+    .services-center,
+    .services-left {
+        margin: 20px 0;
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .services-right,
+    .services-left {
+        text-align: left;
+    }
+
+    .services-right .service-text p {
+        margin-left: 0;
+    }
+
+    .services-center {
+        order: -1;
+    }
+
+    .services-center img {
+        width: 150px;
+    }
+
+    .service-text p {
+        max-width: 100%;
+    }
+
+    .price-wrap {
+        width: 90%;
+        padding: 40px;
+        margin: 40px auto;
+    }
+
+    .price-wrap::before {
+        width: 400px;
+        height: 400px;
+        top: 60px;
+        opacity: 0.2;
+    }
+
+    .price-title {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+
+    .butoni1 {
+        margin: 40px auto 0 auto;
+        display: block;
+    }
+
+    .newsletter {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        justify-content: space-between;
+        padding: 0 10px;
+        margin: 10px;
+        height: 60px;
+        border-radius: 40px;
+        margin-top: 30px;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+        margin-left: 20px;
+    }
+
+    .hamburger {
+        display: flex;
+        margin-left: auto;
+        margin-right: 20px;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: 10px;
+        right: 10px;
+        background-color: #C7E7EC;
+        border-radius: 30px;
+        padding: 20px 0;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        z-index: 50;
+        transform: translateY(-10px);
+        opacity: 0;
+        pointer-events: none;
+        transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+        margin: 20px;
+        width: 200px;
+        text-align: center;
+        gap: 0;
+        margin-left: 150px;
+    }
+
+    .nav.active {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    .nav li {
+        width: 100%;
+        padding: 7px 0;
+        border-bottom: 1px solid rgba(47, 62, 60, 0.1);
+        list-style: none;
+    }
+
+    .nav li:last-child {
+        border-bottom: none;
+    }
+
+    .nav a {
+        padding: 10px 0;
+        display: block;
+        width: 100%;
+        color: #2F3E3C;
+    }
+
+    .butoni {
+        margin: 15px auto;
+        width: 80%;
+        max-width: 200px;
+        background-color: #F8F3E6;
+        width: 170px;
+        height: 50px;
+        text-align: center;
+        border: 1px solid #F8F3E6;
+    }
+
+    .butoni a {
+        color: #1ebeb6;
+        font-weight: bold;
+    }
+
+    .tekstnavbar h2 {
+        font-size: 30px;
+        margin-top: 4rem;
+        margin-left: 20px;
+    }
+
+    .services-wrapper {
+        border-radius: 10px;
+    }
+
+    .additional-services {
+        padding: 40px 10px;
+        margin-right: 15px;
+    }
+
+    .additional-container {
+        grid-template-columns: 1fr;
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .price-wrap {
+        position: relative;
+        width: 60%;
+        background: #fbfbf6b5;
+        padding: 60px 70px;
+        border-radius: 20px;
+        box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
+        font-family: Arial, sans-serif;
+    }
+    
+    .price-title {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .price-item {
+        font-size: 16px;
+        padding: 8px 0;
+    }
+
+    .butoni1 {
+        width: 140px;
+        height: 35px;
+        font-size: 14px;
+        margin-top: 30px;
+    }
+
+    .price-wrap::before {
+        content: none;
+    }
+
+    .footer {
+        padding: 20px 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        padding: 30px 20px;
+        gap: 30px;
+    }
+
+    .newsletter {
+        margin-right: 0;
+        order: -1;
+    }
+
+    .inputarea {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .inputsubscribe {
+        width: 90%;
+        max-width: 280px;
+        margin-right: 0;
+    }
+
+    .subscribe {
+        width: 100px;
+        height: 40px;
+        border-radius: 20px;
+        background-color: #1ebeb6;
+        border: 1px solid #1ebeb6;
+        margin-top: 20px;
+    }
+
+    .photo {
+        padding: 80px 0;
+    }
+}
+
