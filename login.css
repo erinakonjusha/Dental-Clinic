@@ -144,89 +144,32 @@ body {
     z-index: 1;
 }
 
-/* 1024px (laptop/madhësi mesatare) */
-@media (max-width: 1024px) {
-    .login-container {
-        margin: 3rem 8rem;
-        flex-direction: row;
-        padding: 2rem 0;
-    }
-
-    .login-leftside,
-    .login-rightside {
-        padding: 2rem;
-        gap: 2rem;
-        justify-content: center;  /* per qendrim stabil */
-    }
-
-    .logo-login {
-        margin-right: 0;
-    }
+.error {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: block;
 }
 
-/* 768px (tablet) */
-@media (max-width: 768px) {
-
-    .login-container {
-        flex-direction: column;  
-        margin: 2rem;
-        padding: 0;
-    }
-
-    .login-leftside,
-    .login-rightside {
-        border-radius: 20px;
-        padding: 2rem;
-        gap: 1.7rem;
-        justify-content: center; 
-    }
-
-    .login-rightside h2 {
-        margin-top: 1rem;
-    }
-
-    .login-leftside h2 {
-        margin-bottom: 1rem;
-    }
-
-    .logo-login {
-        margin-right: 0;
-    }
+input.invalid {
+    border-color: red;
 }
 
-/* 480px (mobile) */
-@media (max-width: 480px) {
-
-    .login-container {
-        margin: 1rem;
-    }
-
-    .login-leftside,
-    .login-rightside {
-        padding: 1.5rem 1rem;
-        gap: 1.2rem;
-        justify-content: center;
-    }
-
-    .login-rightside h2 {
-        font-size: 22px;
-        margin-top: 0.5rem;
-    }
-
-    .login-leftside h2 {
-        font-size: 24px;
-    }
-
-    .login-container input {
-        font-size: 14px;
-    }
-
-    .login-rightside button {
-        width: 130px;
-        padding: 8px;
-    }
-
-    .go-to-signup {
-        font-size: 13px;
-    }
+input.valid {
+    border-color: #1ebeb6;
 }
+
+.animate {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all .7s ease-out;
+}
+
+.animate.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.scroll-left { transform: translateX(-40px); }
+.scroll-right { transform: translateX(40px); }
+
