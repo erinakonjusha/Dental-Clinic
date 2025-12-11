@@ -173,3 +173,90 @@ input.valid {
 .scroll-left { transform: translateX(-40px); }
 .scroll-right { transform: translateX(40px); }
 
+@media (max-width: 1200px) {
+    .login-container {
+        margin-left: 5rem;
+        margin-right: 5rem;
+        width: auto;
+    }
+
+    .login-leftside {
+        padding: 30px;
+    }
+
+    .logo-login {
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 900px) {
+    .login-container {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .login-leftside h2 {
+        font-size: 24px;
+    }
+
+    .login-rightside h2 {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 768px) {
+    .login-container {
+        flex-direction: column;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        max-width: 450px;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .login-leftside {
+        border-radius: 50px 50px 0 0;
+        padding: 40px 20px;
+        justify-content: center;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .logo-login {
+        margin: 0 auto;
+        width: 60px;
+        height: 60px;
+    }
+
+    .login-leftside h2 {
+        margin-bottom: 0;
+        font-size: 22px;
+    }
+
+    .back-home {
+        margin-top: 20px;
+    }
+
+    .login-rightside {
+        border-radius: 0 0 50px 50px;
+        padding: 40px 20px 60px 20px;
+        justify-content: center;
+    }
+
+    .login-rightside h2 {
+        margin-top: 0;
+        margin-bottom: 30px;
+        font-size: 24px;
+    }
+
+    .login-rightside form {
+        margin-bottom: 3rem;
+    }
+
+    .login-rightside button {
+        align-self: center;
+    }
+}
