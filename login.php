@@ -1,6 +1,27 @@
 <?php
+session_start();
+include_once 'db.php';
+include_once 'user.php';
 
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $db = new Database();
+    $connection = $db->getConnection();
+    $user = new User($connection);
+
+    // Get form data
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+    // Attempt to log in
+    if ($user->login($email, $password)) {
+        header("Location: index.php"); // Redirect to home page
+        exit;
+    } else {
+        echo "Invalid login credentials!";
+    }
+}
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -33,10 +54,10 @@
             <div class="login-rightside">
                 <h2>Login</h2>
                 <hr>
-                <form id="loginForm">
-                    <input id="email" type="text" placeholder="Email">
+                <form id="loginForm"  action="login.php" method="POST">
+                    Email: <input id="email" type="email" placeholder="Email" name="email" required><br>
                     <span class="error" id="emailError"></span>
-                    <input id="password" type="password" placeholder="Password">
+                    <input id="password" type="password" placeholder="Password" name="password" required>
                     <span class="error" id="passError"></span>
                     <button type="submit">Login</button>
                 </form>
