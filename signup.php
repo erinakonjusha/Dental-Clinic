@@ -46,7 +46,7 @@
 
                 <div class="go-to-login">
                     <p>Already have an account?</p>
-                    <a href="login.html">Login</a>
+                    <a href="login.php">Login</a>
                 </div>
             </div>
             <div class="signup-rightside">
@@ -55,7 +55,7 @@
                     <h2>Welcome!</h2>
                 </div>
                 <div class="back-home">
-                    <a href="index.html" class="back-link"><img src="images/back.png" alt="Back" class="back-icon">Back
+                    <a href="index.php" class="back-link"><img src="images/back.png" alt="Back" class="back-icon">Back
                         Home</a>
                 </div>
             </div>

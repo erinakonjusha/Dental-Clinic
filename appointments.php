@@ -27,12 +27,12 @@
             </div>
 
             <ul style="list-style: none;" class="nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="aboutUs.html">About us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="contactUs.html">Contact us</a></li>
-                <li><a href="login.html">Login</a></li>
-                <button class="butoni"><a href="appointments.html"><b>Book Appointment</b></a></button>
+                <li><a href="index.php">Home</a></li>
+                <li><a href="aboutUs.php">About us</a></li>
+                <li><a href="services.php">Services</a></li>
+                <li><a href="contactUs.php">Contact us</a></li>
+                <li><a href="login.php">Login</a></li>
+                <button class="butoni"><a href="appointments.php"><b>Book Appointment</b></a></button>
             </ul>
         </div>
         <div class="tekstnavbar animate scroll-fade">

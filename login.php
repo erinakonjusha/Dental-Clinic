@@ -47,7 +47,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <h2>Welcome Back!</h2>
                 </div>
                 <div class="back-home">
-                    <a href="index.html" class="back-link"><img src="images/back.png" alt="Back" class="back-icon">Back
+                    <a href="index.php" class="back-link"><img src="images/back.png" alt="Back" class="back-icon">Back
                         Home</a>
                 </div>
             </div>
@@ -63,7 +63,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 </form>
                 <div class="go-to-signup">
                     <p>Don't have an account?</p>
-                    <a href="signup.html">Sign up</a>
+                    <a href="signup.php">Sign up</a>
                 </div>
             </div>
         </div>
