@@ -1,11 +1,9 @@
 <?php
-
 session_start();
 include_once "db.php";
 include_once "user.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
     $db = new Database();
     $conn = $db->getConnection();
 
@@ -15,16 +13,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = $_POST["password"];
 
     if ($user->register($name, $email, $password)) {
-
         header("Location: login.php");
         exit;
-
     } else {
-
-        echo "Register failed!";
+        $error = "Registration failed!";
     }
 }
 ?>
+
 
 
 <!DOCTYPE html>

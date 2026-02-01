@@ -1,31 +1,30 @@
 <?php
-
 session_start();
-
 include_once "db.php";
 include_once "user.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
     $db = new Database();
     $conn = $db->getConnection();
-
     $user = new User($conn);
 
     $email = $_POST["email"];
     $password = $_POST["password"];
 
     if ($user->login($email, $password)) {
-
-        header("Location: index.php");
+        if ($user->isAdmin()) {
+            header("Location: index.php");
+        } else {
+            header("Location: index.php");
+        }
         exit;
-
     } else {
-
-        echo "Wrong email or password!";
+        $error = "Wrong email or password!";
     }
 }
 ?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
