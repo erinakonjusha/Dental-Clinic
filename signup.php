@@ -1,5 +1,25 @@
 <?php
+include_once 'db.php';
+include_once 'user.php';
 
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    $db = new Database();
+    $connection = $db->getConnection();
+    $user = new User($connection);
+
+    // Get form data
+    $name = $_POST['name'];
+    $email = $_POST['email'];
+    $password = $_POST['password'];
+
+    // Register the user
+    if ($user->register($name, $email, $password)) {
+        header("Location: login.php"); // Redirect to login page
+        exit;
+    } else {
+        echo "Error registering user!";
+    }
+}
 ?>
 
 <!DOCTYPE html>
@@ -23,20 +43,20 @@
             <div class="signup-leftside">
                 <h2>Sign Up</h2>
                 <hr>
-                <form id="signupForm">
+                <form id="signupForm" method="POST" action="">
 
                     <div class="input-group">
-                        <input type="text" id="name" placeholder="Name">
+                        <input type="text" id="name" name="name" placeholder="Name">
                         <span id="nameError" class="error"></span>
                     </div>
 
                     <div class="input-group">
-                        <input type="text" id="email" placeholder="Email">
+                        <input type="text" id="email"  name="email" placeholder="Email">
                         <span id="emailError" class="error"></span>
                     </div>
 
                     <div class="input-group">
-                        <input type="password" id="password" placeholder="Password">
+                        <input type="password" id="password" name="password" placeholder="Password">
                         <span id="passError" class="error"></span>
                     </div>
 
