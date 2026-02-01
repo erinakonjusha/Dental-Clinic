@@ -1,5 +1,6 @@
 <?php
 
+session_start();
 include_once "db.php";
 include_once "user.php";
 
@@ -43,22 +44,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <path d="M0,150 C200,300 600,0 800,150 L800,600 L0,600 Z" fill="rgba(255,255,255,0.1)" />
             <path d="M0,200 C300,100 500,400 800,250 L800,600 L0,600 Z" fill="rgba(255,255,255,0.1)" />
         </svg>
-        <div class="signup-container animate scroll-left">
+        <div class="signup-container">
             <div class="signup-leftside">
                 <h2>Sign Up</h2>
                 <hr>
                 <form id="signupForm" method="POST" action="signup.php">
                     <div class="input-group">
-    <input type="text" name="name" placeholder="name" required><br><br>
+    <input type="text" name="name" id="name" placeholder="name" ><br><br>
                         <span id="nameError" class="error"></span>
                     </div>
                     <div class="input-group">
-    <input type="email" name="email" placeholder="email" required><br><br>
+    <input name="email" id="email" placeholder="email" ><br><br>
                         <span id="emailError" class="error"></span>
                     </div>
 
                     <div class="input-group">
-    <input type="password" name="password" placeholder="password" required><br><br>
+    <input type="password" name="password" id="password" placeholder="password" ><br><br>
                         <span id="passError" class="error"></span>
                     </div>
 

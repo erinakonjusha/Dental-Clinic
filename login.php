@@ -43,7 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <path d="M0,150 C200,300 600,0 800,150 L800,600 L0,600 Z" fill="rgba(255,255,255,0.1)" />
             <path d="M0,200 C300,100 500,400 800,250 L800,600 L0,600 Z" fill="rgba(255,255,255,0.1)" />
         </svg>
-        <div class="login-container animate scroll-right">
+        <div class="login-container">
             <div class="login-leftside">
                 <img src="images/Logo.png" alt="logo" class="logo-login">
                 <div class="login-leftside-text">
@@ -58,9 +58,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <h2>Login</h2>
                 <hr>
                 <form id="loginForm"  action="login.php" method="POST">
-                     <input type="email" name="email" placeholder="email" required><br><br>
+                    <input id="email" name="email" placeholder="email">
                     <span class="error" id="emailError"></span>
-                    <input type="password" name="password" placeholder="password" required><br><br>
+                    <input type="password" id="password" name="password" placeholder="password">
                     <span class="error" id="passError"></span>
                     <button type="submit">Login</button>
                 </form>
