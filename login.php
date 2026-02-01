@@ -1,28 +1,31 @@
 <?php
+
 session_start();
-include_once 'db.php';
-include_once 'user.php';
 
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+include_once "db.php";
+include_once "user.php";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
     $db = new Database();
-    $connection = $db->getConnection();
-    $user = new User($connection);
+    $conn = $db->getConnection();
 
-    // Get form data
-    $email = $_POST['email'];
-    $password = $_POST['password'];
+    $user = new User($conn);
 
-    // Attempt to log in
+    $email = $_POST["email"];
+    $password = $_POST["password"];
+
     if ($user->login($email, $password)) {
-        header("Location: index.php"); // Redirect to home page
+
+        header("Location: index.php");
         exit;
+
     } else {
-        echo "Invalid login credentials!";
+
+        echo "Wrong email or password!";
     }
 }
 ?>
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -55,9 +58,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                 <h2>Login</h2>
                 <hr>
                 <form id="loginForm"  action="login.php" method="POST">
-                    Email: <input id="email" type="email" placeholder="Email" name="email" required><br>
+                     <input type="email" name="email" placeholder="email" required><br><br>
                     <span class="error" id="emailError"></span>
-                    <input id="password" type="password" placeholder="Password" name="password" required>
+                    <input type="password" name="password" placeholder="password" required><br><br>
                     <span class="error" id="passError"></span>
                     <button type="submit">Login</button>
                 </form>

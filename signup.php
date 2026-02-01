@@ -1,26 +1,30 @@
 <?php
-include_once 'db.php';
-include_once 'user.php';
 
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+include_once "db.php";
+include_once "user.php";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+
     $db = new Database();
-    $connection = $db->getConnection();
-    $user = new User($connection);
+    $conn = $db->getConnection();
 
-    // Get form data
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $password = $_POST['password'];
+    $user = new User($conn);
+    $name = $_POST["name"];
+    $email = $_POST["email"];
+    $password = $_POST["password"];
 
-    // Register the user
     if ($user->register($name, $email, $password)) {
-        header("Location: login.php"); // Redirect to login page
+
+        header("Location: login.php");
         exit;
+
     } else {
-        echo "Error registering user!";
+
+        echo "Register failed!";
     }
 }
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -43,20 +47,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <div class="signup-leftside">
                 <h2>Sign Up</h2>
                 <hr>
-                <form id="signupForm" method="POST" action="">
-
+                <form id="signupForm" method="POST" action="signup.php">
                     <div class="input-group">
-                        <input type="text" id="name" name="name" placeholder="Name">
+    <input type="text" name="name" placeholder="name" required><br><br>
                         <span id="nameError" class="error"></span>
                     </div>
-
                     <div class="input-group">
-                        <input type="text" id="email"  name="email" placeholder="Email">
+    <input type="email" name="email" placeholder="email" required><br><br>
                         <span id="emailError" class="error"></span>
                     </div>
 
                     <div class="input-group">
-                        <input type="password" id="password" name="password" placeholder="Password">
+    <input type="password" name="password" placeholder="password" required><br><br>
                         <span id="passError" class="error"></span>
                     </div>
 
