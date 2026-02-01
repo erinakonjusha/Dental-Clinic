@@ -52,6 +52,14 @@ body {
     margin-left: 10rem;
 }
 
+.logout-btn {
+    padding: 6px 14px;
+    border-radius: 14px;
+    border: 1px solid #2F3E3C;
+    background: transparent;
+    cursor: pointer;
+}
+
 .butoni {
     width: 160px;
     height: 40px;

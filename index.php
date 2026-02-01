@@ -1,3 +1,14 @@
+<?php
+session_start();
+include_once "db.php";
+include_once "user.php";
+
+$db = new Database();
+$conn = $db->getConnection();
+
+$user = new User($conn);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,24 +22,9 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="navbar">
-            <div class="logo">
-                <img src="images/Logo.png" alt="logo">
-            </div>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <ul style="list-style: none;" class="nav">
-                <li><a href="aboutUs.php">About us</a></li>
-                <li><a href="services.php">Services</a></li>
-                <li><a href="contactUs.php">Contact us</a></li>
-                <li><a href="login.php">Login</a></li>
-                <button class="butoni"><a href="appointments.php"><b>Book Appointment</b></a></button>
-            </ul>
-        </div>
+
+<div class="container">
+       <?php include_once "navbar.php"; ?>
         <div class="fotobackground animate scroll-fade">
             <img src="images/fotobg.png" alt="navbar-background" class="fotobgg">
             <div class="tekst-te-foto">

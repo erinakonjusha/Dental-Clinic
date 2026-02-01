@@ -15,24 +15,7 @@
 <body>
 
     <div class="container">
-        <div class="navbar">
-            <div class="logo">
-                <img src="images/Logo.png" alt="logo">
-            </div>
-             <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div> 
-            <ul style="list-style: none;" class="nav">
-                <li><a href="index.php">Home</a></li>
-                <li><a href="aboutUs.php">About us</a></li>
-                <li><a href="services.php">Services</a></li>
-                <li><a href="contactUs.php"><b>Contact us</b></a></li>
-                <li><a href="login.php">Login</a></li>
-                <button class="butoni"><a href="appointments.php"><b>Book Appointment</b></a></button>
-            </ul>
-        </div>
+   <?php include_once "navbar.php"; ?>
 
         <div class="tekstnavbar animate scroll-fade">
             <h2>Contact Us</h2>
